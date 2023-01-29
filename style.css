@@ -1,0 +1,406 @@
+/* CSS Reset */
+* {
+    
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 400;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 80px;
+    width: 80px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+#navbar button{
+    margin-left: 17px;
+    margin-right: 0px;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#navbar input {
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+/* Home Section */
+.head {
+    position: absolute;
+    top: 112px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('./Images/1.jpg') no-repeat center center/cover;
+    height: 666px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home h1 {
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* Services Section */
+#services-container{
+    background-color: #c7af9a;
+}
+#services {
+    margin: 3px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    grid-gap: 40px;
+    /* display: flex; */
+
+}
+
+ #services::before{
+    content: "";
+    position: absolute;
+    height: 808px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.9;
+} 
+
+#services .box {
+    padding: 34px;
+    margin: 15px auto;
+    border-radius: 28px;
+    background: rgb(208 202 192);
+    margin-bottom: 20px;
+    color: black;
+    width: 390px;
+    height: 300px;
+}
+
+
+
+
+
+#services .box img {
+    height: 175px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p,
+.timings p {
+    font-family: 'Bree Serif', serif;
+
+}
+
+#menu{
+    height: 500px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+}
+
+.myMenu ul li{
+    font-family: 'Bree Serif', serif;
+    padding: 6px 0px;
+    font-size: 1.3rem;
+
+}
+
+#menu::before{
+    content: "";
+    position: absolute;
+    background: url('./Images/pizza.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 503px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* partner Section */
+#partner-section {
+    position: relative;
+    height: 300px;
+}
+
+#partner-section::before {
+    content: "";
+    position: absolute;
+    background: url('./Images/pizza.jpg');
+    width: 100%;
+    height: 334px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.partner-item {
+    padding: 34px;
+}
+
+#partners img {
+    height: 124px;
+    z-index: 1;
+}
+
+/* timings section */
+#timings {
+    display: flex;
+    justify-content: space-evenly;
+    padding:34px 0px;
+}
+
+
+
+#timings::before {
+    
+    content: "";
+    /* position: absolute; */
+    position: absolute;
+    background-color: rgb(123, 116, 116);
+    width: 100%;
+    height: 230px;
+    z-index: -1;
+    opacity: 0.2;
+
+}
+
+#timings button{
+    margin-left: 17px;
+    margin-right: 0px;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#timings  input {
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.contact p{
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
+}
+ .contact ul{
+     list-style: none;
+     display: flex;
+     align-items: center;
+ }
+ 
+ .contact li a{
+  
+    display: block;
+     padding: 3px 12px;
+     list-style: none;
+     cursor: pointer;
+ }
+ 
+ 
+ 
+ .contact li img{
+     width: auto;
+     height: 30px;  
+ }
+
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(230, 39, 39);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: black;
+}
+
+.center {
+    text-align: center;
+}
+  
+    #contact-box input,
+    #contact-box textarea{
+        border-radius: 10px;
+        font-size: 1.1rem;
+        width: 100%;
+        padding: 0.4rem;
+        font-family: 'Bree Serif', serif;
+        /* margin: 10px 15px; */
+    }
+    #contact-box form{
+        width: 50%;
+    
+    }
+    #contact-box label{
+        font-size:1.3rem ;
+        font-family: 'Bree Serif', serif;
+    }
+    
+    #contact-box .btn{
+        display: block;
+        width: 102%;
+        margin: 12px auto; 
+    }
+    
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+    }
+    
+
+    #orderNow {
+        position: relative;
+        height: 836px;
+        top: 34px;
+    }
+    
+    #orderNow::before {
+        content: "";
+        position: absolute;
+        background: url('./Images/pizza.jpg');
+        width: 100%;
+        height: 836px;
+        z-index: -1;
+        opacity: 0.3;
+    }
+    
+    #contact-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    #contact-box img {
+        height: 124px;
+    }
+
+    #main,#fast,#dessert,#dal,#bread{
+        border-radius: 10px;
+        font-size: 1.1rem;
+        width: 100%;
+        padding: 0.4rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    #bill p{
+        font-weight: bold;
+        font-family: 'Bree Serif', serif;
+        padding: 6px 0px;
+        font-size: 1.3rem;
+    }

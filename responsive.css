@@ -1,0 +1,141 @@
+/* Navigation */
+#navbar {
+    flex-direction: column;
+    opacity: 5;
+}
+
+#logo img{
+    height: 60px;
+    width: 60px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+    
+}
+/* Home section */
+#home{
+    height: 370px; 
+    width: 440px;
+    padding: 3px 2px;
+}
+
+#home::before{
+    height: 530px; 
+}
+
+#home p{
+    font-size: 13px;
+}
+
+/* Services section  */
+
+#services-container,#navbar,#home,#home::before,#partner-section,#timings,#timings::before,footer{
+width: 432px;}
+
+#partner-section::before{
+    height: 344px;
+}
+
+#menu,#menu::before{
+    width: 432px;
+    height: 700px;
+}
+
+
+.myMenu ul li{
+       padding: 0px 0px; 
+    font-size: 1.1rem;
+
+}
+
+
+
+#services{
+grid-auto-flow: row;}
+
+#services .box { 
+    padding: 14px;
+    margin: 2px 0px; 
+    margin-bottom: 20px;
+}
+
+/* Clients section */
+#partners{
+    flex-wrap: wrap;
+}
+
+#partners img{
+    width: 66px;
+    padding: 0px;
+    height: auto;
+}
+
+.contact ul{
+        flex-wrap: wrap;
+    
+}
+
+/* Contact us section */
+#contact-box form{
+    width:80%;
+}
+
+#timings::before{
+    height: 395px;
+}
+#timings{
+    flex-wrap: wrap;
+    padding: 0px;
+    align-items: center;
+}
+
+#timings button{
+    margin-left: 3px;
+    margin-right: 0px;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#timings  input {
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+footer{
+    width: 430px;
+    padding:8px 0px ;
+}
+
+/* Utility classes */
+.h-primary{
+    font-size:26px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+
+.h-secondary{
+    font-size: 22px;
+}
+#contact-box form{
+    opacity: 0.7;
+    width: 70%;
+    align-items: center;
+    }
+
+    #orderNow::before{
+        height: 818px;
+    }
+
+    #orderNow{
+        width: 432px;
+    }
